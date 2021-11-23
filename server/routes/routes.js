@@ -1,19 +1,26 @@
 const express = require('express')
 const router = express.Router()
-const request = require('superagent')
 
-module.exports = router
+const db = require('../db/db')
 
-// Server use '/api/v1/home'
 router.get('/', (req, res) => {
-  request.get('https://random-d.uk/api/v2/random')
-    .then(response => {
-      res.json({ output: response.body.url })
+  db.getTodoList()
+    .then(todos => {
+      res.json(todos)
       return null
-    }).catch(err => console.error(err))
+    })
+    .catch(err => console.error(err))
 })
 
 router.post('/', (req, res) => {
-  console.log(req.body)
-  res.json(req.body)
+  db.addTodo(req.body)
+    .then(() => {
+      res.sendStatus(201)
+      return null
+    })
+    .catch(err => {
+      res.sendStatus(500).send(err.message)
+    })
 })
+
+module.exports = router
