@@ -24,3 +24,29 @@
     text-decoration: none;
         
 }
+
+.TopBottomLine{
+    margin-top: 0;
+    text-decoration: underline overline;
+    text-underline-position: under;
+    flex-direction: row;
+    margin-block-end: 0.2em;;
+
+}
+.Grid-cell{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 20px;
+    width: 75px;
+    height: auto;
+}

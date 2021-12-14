@@ -29,7 +29,7 @@
       "bundle.js"
     ]
   },
-  "author": "EDA",
+  "author": "ying",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.10",
