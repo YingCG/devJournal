@@ -1,6 +1,7 @@
 import React from 'react'
 
-function TodoItem (props) {
+function NewTodoForm (props) {
+  this.state = { task: '' }
   return (
     <>
       <p>{props.todo.name}</p>
@@ -10,4 +11,4 @@ function TodoItem (props) {
   )
 }
 
-export default TodoItem
+export default NewTodoForm
