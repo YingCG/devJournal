@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Moods from './Moods'
+import SquareList from './SquareList'
 
 const customStyle = {
   color: 'red',
@@ -18,6 +19,7 @@ function Home () {
         <Moods />
         <div className='main'>
           <button className='btn'><Link to='/todolist'>My To do List</Link></button>
+          <SquareList />
         </div>
       </div>
     </>

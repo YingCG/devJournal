@@ -119,8 +119,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _Moods__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Moods */ "./client/components/Moods.jsx");
+/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
+
 
 
 
@@ -139,9 +141,9 @@ function Home() {
     className: "main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/todolist"
-  }, "My To do List")))));
+  }, "My To do List")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SquareList__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
@@ -212,6 +214,64 @@ var Mood = /*#__PURE__*/function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Mood);
+
+/***/ }),
+
+/***/ "./client/components/Square.jsx":
+/*!**************************************!*\
+  !*** ./client/components/Square.jsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function Square(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    id: "square".concat(props.id)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "title=", props.title, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " details=", props.details, " "));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Square);
+
+/***/ }),
+
+/***/ "./client/components/SquareList.jsx":
+/*!******************************************!*\
+  !*** ./client/components/SquareList.jsx ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Square__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Square */ "./client/components/Square.jsx");
+/* harmony import */ var _data_squareList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data/squareList */ "./client/data/squareList.js");
+ // import { Link, Route } from 'react-router-dom'
+
+
+
+
+function SquareList() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square-list"
+  }, _data_squareList__WEBPACK_IMPORTED_MODULE_2__["default"].colors.map(function (square) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Square__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      key: square.id
+    });
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SquareList);
 
 /***/ }),
 
@@ -336,6 +396,47 @@ function TodoList() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TodoList);
+
+/***/ }),
+
+/***/ "./client/data/squareList.js":
+/*!***********************************!*\
+  !*** ./client/data/squareList.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  squares: [{
+    id: 1,
+    title: 'className',
+    description: 'To stye each component, we first have to give a className',
+    details: '[.square {\n min-width: 250px; \n  width: 270px;\n  height: 270px;\n  padding: 20px;\n font-weight: bold;}, {\n .square::after \n content: ""; \n  display: block; \n padding-bottom: 100%;}}, {\n  #square1 \n background-color:  #F4DFD0; \n }}]',
+    color: ''
+  }, {
+    id: 2,
+    title: 'Margin',
+    description: 'Used to create space around elements, outside of any defined borders',
+    details: '{\n  margin: 10px; \n  width: 250px; \n  height: 250px;}',
+    color: 'thistle'
+  }, {
+    id: 3,
+    title: 'Border',
+    description: 'border-style, width, color, ratio',
+    details: '{\n #square3{ \n  background-color: #7EB5A6; \n border-style: dotted solid double dashed; \n  border-width: 10px; \n  border-color: #B5EAEA; \n  } }',
+    color: '#7EB5A6'
+  }, {
+    id: 4,
+    title: 'Padding',
+    description: 'border-style, width, color, ratio',
+    details: '{\n #square4{ \n background-color: #006A71; \n padding: 20px; \n   color: thistle; \n  } \n  #square4 p{  \n color: thistle; \n} } }',
+    color: '#7EB5A6'
+  }]
+});
 
 /***/ }),
 
