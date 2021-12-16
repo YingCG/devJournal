@@ -2,7 +2,7 @@ export default {
   squares: [
     {
       id: 1,
-      title: 'className',
+      title: 'CSS stlying',
       description: 'To stye each component, we first have to give a className',
       details: '[.square {\n min-width: 250px; \n  width: 270px;\n  height: 270px;\n  padding: 20px;\n font-weight: bold;}, {\n .square::after \n content: ""; \n  display: block; \n padding-bottom: 100%;}}, {\n  #square1 \n background-color:  #F4DFD0; \n }}]',
       color: ''
@@ -25,6 +25,13 @@ export default {
       id: 4,
       title: 'Padding',
       description: 'border-style, width, color, ratio',
+      details: '{\n #square4{ \n background-color: #006A71; \n padding: 20px; \n   color: thistle; \n  } \n  #square4 p{  \n color: thistle; \n} } }',
+      color: '#7EB5A6'
+    },
+    {
+      id: 5,
+      title: 'className',
+      description: 'A group of elements can share a className to apply the same style , you can add more than one class to the element. ',
       details: '{\n #square4{ \n background-color: #006A71; \n padding: 20px; \n   color: thistle; \n  } \n  #square4 p{  \n color: thistle; \n} } }',
       color: '#7EB5A6'
     }

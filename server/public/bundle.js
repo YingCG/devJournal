@@ -119,10 +119,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Moods__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Moods */ "./client/components/Moods.jsx");
-/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
-
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
 
 
 
@@ -137,83 +135,16 @@ function Home() {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
     style: customStyle
-  }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Moods__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "main"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/todolist"
-  }, "My To do List")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SquareList__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
+  }, "My To do List")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SquareList__WEBPACK_IMPORTED_MODULE_1__["default"], null))));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
-
-/***/ }),
-
-/***/ "./client/components/Moods.jsx":
-/*!*************************************!*\
-  !*** ./client/components/Moods.jsx ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-
-
-function getMood() {
-  var moods = ['Happy', 'Hungry', 'Silly', 'Quiet', 'Paranoid'];
-  return moods[Math.floor(Math.random() * moods.length)];
-}
-
-var Mood = /*#__PURE__*/function (_React$Component) {
-  _inherits(Mood, _React$Component);
-
-  var _super = _createSuper(Mood);
-
-  function Mood() {
-    _classCallCheck(this, Mood);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(Mood, [{
-    key: "render",
-    value: function render() {
-      var mood = getMood();
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "My current mood is : ", mood, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, mood === 'Happy' ? 'I made it!' : 'Talk to the rubber duck, and keep trying! '));
-    }
-  }]);
-
-  return Mood;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Mood);
 
 /***/ }),
 
@@ -235,7 +166,7 @@ function Square(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     id: "square".concat(props.id)
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "title=", props.title, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " details=", props.details, " "));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, props.title, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " ", props.details.replace('\n', '<br />'), " "));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Square);
@@ -264,9 +195,12 @@ __webpack_require__.r(__webpack_exports__);
 function SquareList() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square-list"
-  }, _data_squareList__WEBPACK_IMPORTED_MODULE_2__["default"].colors.map(function (square) {
+  }, _data_squareList__WEBPACK_IMPORTED_MODULE_2__["default"].squares.map(function (square) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Square__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      key: square.id
+      key: square.id,
+      id: square.id,
+      title: square.title,
+      details: square.details
     });
   })));
 }
@@ -413,7 +347,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   squares: [{
     id: 1,
-    title: 'className',
+    title: 'CSS stlying',
     description: 'To stye each component, we first have to give a className',
     details: '[.square {\n min-width: 250px; \n  width: 270px;\n  height: 270px;\n  padding: 20px;\n font-weight: bold;}, {\n .square::after \n content: ""; \n  display: block; \n padding-bottom: 100%;}}, {\n  #square1 \n background-color:  #F4DFD0; \n }}]',
     color: ''
@@ -433,6 +367,12 @@ __webpack_require__.r(__webpack_exports__);
     id: 4,
     title: 'Padding',
     description: 'border-style, width, color, ratio',
+    details: '{\n #square4{ \n background-color: #006A71; \n padding: 20px; \n   color: thistle; \n  } \n  #square4 p{  \n color: thistle; \n} } }',
+    color: '#7EB5A6'
+  }, {
+    id: 5,
+    title: 'className',
+    description: 'A group of elements can share a className to apply the same style , you can add more than one class to the element. ',
     details: '{\n #square4{ \n background-color: #006A71; \n padding: 20px; \n   color: thistle; \n  } \n  #square4 p{  \n color: thistle; \n} } }',
     color: '#7EB5A6'
   }]

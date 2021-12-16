@@ -2,11 +2,15 @@
   "name": "mytodolist",
   "version": "0.2.1",
   "description": "React components consuming Web APIs",
-  "repository": "https://github.com/dev-academy-challenges/react-to-web-api.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-academy-challenges/react-to-web-api.git"
+  },
   "main": "server/index.js",
   "scripts": {
     "start": "node server",
     "test": "jest --watchAll",
+    "sass": "node-sass -w scss/ -o css/ --recursive",
     "dev": "run-p dev:client dev:server",
     "dev:client": "webpack --watch --config client/webpack.config.js",
     "dev:server": "nodemon --watch server",
@@ -70,6 +74,8 @@
     "@material-ui/icons": "^4.11.2",
     "express": "^4.17.1",
     "knex": "^0.21.13",
+    "node-sass": "^7.0.0",
+    "sass": "^1.45.0",
     "sqlite3": "^5.0.0"
   },
   "browserify": {
@@ -81,5 +87,9 @@
         }
       ]
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/dev-academy-challenges/react-to-web-api/issues"
+  },
+  "homepage": "https://github.com/dev-academy-challenges/react-to-web-api#readme"
 }

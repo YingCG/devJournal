@@ -1,7 +1,7 @@
 import React from 'react'
 
 function NewTodoForm (props) {
-  this.state = { task: '' }
+  props.state = { task: '' }
   return (
     <>
       <p>{props.todo.name}</p>

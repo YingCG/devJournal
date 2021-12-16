@@ -7,8 +7,8 @@ function SquareList () {
   return (
     <>
       <div className='square-list'>
-        {squareData.colors.map(square => (
-          <Square key={square.id} />
+        {squareData.squares.map(square => (
+          <Square key={square.id} id={square.id} title={square.title} details={square.details}/>
         ))}
       </div>
     </>
