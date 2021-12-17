@@ -30,8 +30,7 @@ function TodoList () {
 
   return (
     <>
-      <div className="container">
-        <Link to="/">Home</Link>
+      <div className='todo'>
         <div className="main">
           <h2>My To-do List</h2>
           <form>

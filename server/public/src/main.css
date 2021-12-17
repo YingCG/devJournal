@@ -1,29 +1,24 @@
-.btn {
-    background-color: #2FDD92;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    color: white;
-    font-size: 18px;
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    position: relative;
+    font-size: 15px;
+    color: #006A71;
 }
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+  }
 
 .app{
     margin: 25px;
 }
 
-.button {
-    background-color: #2FDD92;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-}
 
-.button a{
-    color: black;
-    text-decoration: none;
-        
-}
 
 .TopBottomLine{
     margin-top: 0;

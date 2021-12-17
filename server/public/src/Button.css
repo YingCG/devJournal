@@ -1,13 +1,32 @@
 .button {
-    background-color: blueviolet;
+    background-color: whitesmoke;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
+    font-size: 18px;
 }
 
 .button a{
-    color: white;
-    font-size: 18px;
+    color: black;
     text-decoration: none;
+        
 }
 
+.btn {
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-btn{
+    /* background-color: thistle; */
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}

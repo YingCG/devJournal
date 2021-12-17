@@ -34,6 +34,39 @@ export default {
       description: 'A group of elements can share a className to apply the same style , you can add more than one class to the element. ',
       details: '{\n #square4{ \n background-color: #006A71; \n padding: 20px; \n   color: thistle; \n  } \n  #square4 p{  \n color: thistle; \n} } }',
       color: '#7EB5A6'
+    },
+    {
+      id: 6
+    },
+    {
+      id: 7
+    },
+    {
+      id: 8
+    },
+    {
+      id: 9
     }
+    // {
+    //   id: 10
+    // },
+    // {
+    //   id: 11
+    // },
+    // {
+    //   id: 12
+    // },
+    // {
+    //   id: 13
+    // },
+    // {
+    //   id: 14
+    // },
+    // {
+    //   id: 15
+    // },
+    // {
+    //   id: 16
+    // }
   ]
 }

@@ -4,6 +4,7 @@ import Header from './Header'
 
 import Home from './Home'
 import TodoList from './TodoList'
+import Projects from './Projects'
 
 function App () {
   return (
