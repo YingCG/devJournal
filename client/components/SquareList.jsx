@@ -52,10 +52,12 @@ function SquareList () {
         </div>
 
         <div className='square' style={{backgroundColor: myColors[4]}}>
-                            {/* <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button> */}
+          Express Router <br/><br/>
+          <button className='btn'><a href='https://pupparazi-ying.herokuapp.com/puppies'>Pupparazzi</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[5]}}>
+                            {/* <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button> */}
         </div>
 
         <div className='square' style={{backgroundColor: myColors[6]}}>
