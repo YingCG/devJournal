@@ -1,60 +1,70 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
 
+import TodoList from './TodoList'
+
 function SquareList () {
+
+    function getColorFromPalette () {
+      // const pallete = ['#E4EFE7','#D6E5FA', '#D4E2D4','#D9D7F1','#F3F1F5', '#7EB5A6', '#CEE5D0','#EDF6E5', '#F0D9FF','#F4F9F9','#D3DEDC', '#E4D8DC', '#FEFBF3','#93B5C6', '#F7F2E7', '#C9CCD5', '#FFFDDE', '#F0ECE3','#CDF2CA', '#FFEFEF']
+      // return pallete[Math.floor(Math.random() * pallete.length)]
+
+      const date = new Date();
+      const currentTime = date.getHours()
+      const morningPallete = ['#FFFAFA', '#F9F8EB', '#F9ECEC','#F0D9DA','#C8D9EB','#ECF2F9','#ADD2C9','#A3E4DB','#FBFFE2','#CEE5D0']
+      const afternoonPallete = ['#DBD0C0', '#FAEEE0', '#F9E4C8','#F9CF93','#FFADAD','#EFEFEF','#FCD8D4','#FDF6F0','#F8E2CF','#F5C6AA']
+      const eveningPallete = ['#A3DDCB', '#FFE3DE', '#D3DEDC','#92A9BD','#7C99AC','#B1D0E0','#C9CCD5','#D4ECDD','#F0D9FF','#F3F1F5']
+
+      // if (currentTime < 12){
+      //   return morningPallete;
+      // } else if (currentTime < 18) {
+      //   return afternoonPallete;
+      // } else {
+      //   return eveningPallete;
+      // }
+
+      return currentTime < 12 ? morningPallete : (currentTime < 18 ? afternoonPallete : eveningPallete);
+    }
+
+    const myColors = getColorFromPalette();
+  
   return (
     <>
       <div className='square-list'>
-        <div className='square' id='square1'>
-          <button className='btn'><Link to='/todolist'>My To do List</Link></button>
+        <div className='square' style={{backgroundColor: myColors[0]}}>
+          HTML &amp; CSS Playground
         </div>
 
-        <div className='square' id='square2'>
-          <button className='btn'><Link to='/calculator'>My Calculator</Link></button>
+        <div className='square' style={{backgroundColor: myColors[1]}}>
+        <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button>
         </div>
 
-        <div className='square' id='square3'>
+        <div className='square' style={{backgroundColor: myColors[2]}}>
+          Hi
         </div>
 
-        <div className='square' id='square4'>
+        <div className='square' style={{backgroundColor: myColors[3]}}>
+          YO
         </div>
 
-        <div className='square' id='square5'>
+        <div className='square' style={{backgroundColor: myColors[4]}}>
         </div>
 
-        <div className='square' id='square6'>
+        <div className='square' style={{backgroundColor: myColors[5]}}>
         </div>
 
-        <div className='square' id='square7'>
+        <div className='square' style={{backgroundColor: myColors[6]}}>
         </div>
 
-        <div className='square' id='square8'>
+        <div className='square' style={{backgroundColor: myColors[7]}}>
         </div>
 
-        <div className='square' id='square9'>
+        <div className='square' style={{backgroundColor: myColors[8]}}>
         </div>
 
-        <div className='square' id='square10'>
+        <div className='square' style={{backgroundColor: myColors[9]}}>
         </div>
-
-        <div className='square' id='square11'>
-        </div>
-
-        <div className='square' id='square12'>
-        </div>
-
-        <div className='square' id='square13'>
-        </div>
-
-        <div className='square' id='square14'>
-        </div>
-
-        <div className='square' id='square15'>
-        </div>
-
-        <div className='square' id='square16'>
-        </div>
-
+    {/* <button onClick={handleClick}>Change colour pallete</button> */}
       </div>
     </>
   )

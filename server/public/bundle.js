@@ -43,11 +43,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./client/components/Header.jsx");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home */ "./client/components/Home.jsx");
 /* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TodoList */ "./client/components/TodoList.jsx");
 /* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Projects */ "./client/components/Projects.jsx");
+/* harmony import */ var _Stories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Stories */ "./client/components/Stories.jsx");
+
 
 
 
@@ -58,17 +60,100 @@ __webpack_require__.r(__webpack_exports__);
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "app"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     path: "/",
     exact: true,
     component: _Home__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    path: "/projects",
+    exact: true,
+    component: _Projects__WEBPACK_IMPORTED_MODULE_4__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+    path: "/stories",
+    exact: true,
+    component: _Stories__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
     path: "/todolist",
+    exact: true,
     component: _TodoList__WEBPACK_IMPORTED_MODULE_3__["default"]
   })));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./client/components/Ascii.jsx":
+/*!*************************************!*\
+  !*** ./client/components/Ascii.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function Ascii() {
+  var bigHello = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("pre", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", null, "\n          _____                    _____                    _____            _____           _______         \n         /\\    \\                  /\\    \\                  /\\    \\          /\\    \\         /::\\    \\        \n        /::\\____\\                /::\\    \\                /::\\____\\        /::\\____\\       /::::\\    \\       \n       /:::/    /               /::::\\    \\              /:::/    /       /:::/    /      /::::::\\    \\      \n      /:::/    /               /::::::\\    \\            /:::/    /       /:::/    /      /::::::::\\    \\     \n     /:::/    /               /:::/\\:::\\    \\          /:::/    /       /:::/    /      /:::/~~\\:::\\    \\    \n    /:::/____/               /:::/__\\:::\\    \\        /:::/    /       /:::/    /      /:::/    \\:::\\    \\   \n   /::::\\    \\              /::::\\   \\:::\\    \\      /:::/    /       /:::/    /      /:::/    / \\:::\\    \\  \n  /::::::\\    \\   _____    /::::::\\   \\:::\\    \\    /:::/    /       /:::/    /      /:::/____/   \\:::\\____\\ \n /:::/\\:::\\    \\ /\\    \\  /:::/\\:::\\   \\:::\\    \\  /:::/    /       /:::/    /      |:::|    |     |:::|    |\n/:::/  \\:::\\    /::\\____\\/:::/__\\:::\\   \\:::\\____\\/:::/____/       /:::/____/       |:::|____|     |:::|    |\n\\::/    \\:::\\  /:::/    /\\:::\\   \\:::\\   \\::/    /\\:::\\    \\       \\:::\\    \\        \\:::\\    \\   /:::/    / \n \\/____/ \\:::\\/:::/    /  \\:::\\   \\:::\\   \\/____/  \\:::\\    \\       \\:::\\    \\        \\:::\\    \\ /:::/    /  \n          \\::::::/    /    \\:::\\   \\:::\\    \\       \\:::\\    \\       \\:::\\    \\        \\:::\\    /:::/    /   \n           \\::::/    /      \\:::\\   \\:::\\____\\       \\:::\\    \\       \\:::\\    \\        \\:::\\__/:::/    /    \n           /:::/    /        \\:::\\   \\::/    /        \\:::\\    \\       \\:::\\    \\        \\::::::::/    /     \n          /:::/    /          \\:::\\   \\/____/          \\:::\\    \\       \\:::\\    \\        \\::::::/    /      \n         /:::/    /            \\:::\\    \\               \\:::\\    \\       \\:::\\    \\        \\::::/    /       \n        /:::/    /              \\:::\\____\\               \\:::\\____\\       \\:::\\____\\        \\::/    /        \n         \\::/    /               \\::/    /                \\::/    /        \\::/    /         \\/____/          \n    \\/____/                 \\/____/                  \\/____/          \\/____/                    \n\n"));
+  var smallHello = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("pre", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("code", null, "\n     ___         ___         ___  ___  ___     \n    /\\__\\       /\\  \\       /\\__\\/\\__\\/\\  \\        \n   /:/  /      /::\\  \\     /:/  /:/  /::\\  \\   \n  /:/__/      /:/\\:\\  \\   /:/  /:/  /:/\\:\\  \\  \n /::\\  \\ ___ /::\\~\\:\\  \\ /:/  /:/  /:/  \\:\\  \\ \n/:/\\:\\  /\\__/:/\\:\\ \\:\\__/:/__/:/__/:/__/ \\:\\__\\\n\\/__\\:\\/:/  \\:\\~\\:\\ \\/__\\:\\  \\:\\  \\:\\  \\ /:/  /\n     \\::/  / \\:\\ \\:\\__\\  \\:\\  \\:\\  \\:\\  /:/  / \n     /:/  /   \\:\\ \\/__/   \\:\\  \\:\\  \\:\\/:/  /  \n    /:/  /     \\:\\__\\      \\:\\__\\:\\__\\::/  /   \n    \\/__/       \\/__/       \\/__/\\/__/\\/__/    \n\n    "));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "monospaced"
+  }, bigHello), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "hello"
+  }, smallHello));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Ascii);
+
+/***/ }),
+
+/***/ "./client/components/Greeting.jsx":
+/*!****************************************!*\
+  !*** ./client/components/Greeting.jsx ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function Greeting() {
+  var date = new Date();
+  var currentTime = date.getHours();
+  var greeting;
+  var customStyle = {
+    color: ''
+  };
+
+  if (currentTime < 12) {
+    greeting = 'Good Morning';
+    customStyle.color = '#FFCE45';
+  } else if (currentTime < 18) {
+    greeting = 'Good Afternoon';
+    customStyle.color = '#A3423C';
+  } else if (currentTime > 20) {
+    greeting = 'Good Night';
+    customStyle.color = '#344CB7';
+  } else {
+    greeting = 'Good Evening';
+    customStyle.color = '#344CB7';
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", {
+    className: "greeting",
+    style: customStyle
+  }, greeting));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Greeting);
 
 /***/ }),
 
@@ -91,7 +176,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Header() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "Grid-cell"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "/images/IconYing.svg",
@@ -102,9 +189,9 @@ function Header() {
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "WEB DESIGN & DEVELOPE JOURNAL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "WEB DESIGN & DEVELOPE JOURNAL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
     className: "TopBottomLine"
-  }, "By ying: Some stories & Internet I come across while learning to code."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+  }, "By ying: Some stories & Internet I come across while learning to code.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
@@ -123,16 +210,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
+/* harmony import */ var _Ascii__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Ascii */ "./client/components/Ascii.jsx");
+/* harmony import */ var _Greeting__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Greeting */ "./client/components/Greeting.jsx");
+
 
 
 
 function Home() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "page-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SquareList__WEBPACK_IMPORTED_MODULE_1__["default"], null))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Ascii__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Greeting__WEBPACK_IMPORTED_MODULE_2__["default"], null), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Welcome to my coding journal. Programming is a universe itself yet to discover... ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Here, I am tracking my growth as a developer. To write down how and why I solved coding problems every day, and reveal hurdles in my workflow. I am having so much in this learning journey! ((  \u0361\u2022 \u0296  \u0361\u2022 ))")));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
@@ -170,9 +257,9 @@ function Nav() {
   }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "nav-btn"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/tools",
+    to: "/stories",
     className: "nav-link"
-  }, "Tools"))));
+  }, "Stories"))));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
@@ -191,9 +278,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
 
 
-function Projects() {}
+
+function Projects() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "page-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SquareList__WEBPACK_IMPORTED_MODULE_1__["default"], null))));
+}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
 
@@ -211,73 +306,175 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TodoList */ "./client/components/TodoList.jsx");
+
 
 
 
 function SquareList() {
+  function getColorFromPalette() {
+    // const pallete = ['#E4EFE7','#D6E5FA', '#D4E2D4','#D9D7F1','#F3F1F5', '#7EB5A6', '#CEE5D0','#EDF6E5', '#F0D9FF','#F4F9F9','#D3DEDC', '#E4D8DC', '#FEFBF3','#93B5C6', '#F7F2E7', '#C9CCD5', '#FFFDDE', '#F0ECE3','#CDF2CA', '#FFEFEF']
+    // return pallete[Math.floor(Math.random() * pallete.length)]
+    var date = new Date();
+    var currentTime = date.getHours();
+    var morningPallete = ['#FFFAFA', '#F9F8EB', '#F9ECEC', '#F0D9DA', '#C8D9EB', '#ECF2F9', '#ADD2C9', '#A3E4DB', '#FBFFE2', '#CEE5D0'];
+    var afternoonPallete = ['#DBD0C0', '#FAEEE0', '#F9E4C8', '#F9CF93', '#FFADAD', '#EFEFEF', '#FCD8D4', '#FDF6F0', '#F8E2CF', '#F5C6AA'];
+    var eveningPallete = ['#A3DDCB', '#FFE3DE', '#D3DEDC', '#92A9BD', '#7C99AC', '#B1D0E0', '#C9CCD5', '#D4ECDD', '#F0D9FF', '#F3F1F5']; // if (currentTime < 12){
+    //   return morningPallete;
+    // } else if (currentTime < 18) {
+    //   return afternoonPallete;
+    // } else {
+    //   return eveningPallete;
+    // }
+
+    return currentTime < 12 ? morningPallete : currentTime < 18 ? afternoonPallete : eveningPallete;
+  }
+
+  var myColors = getColorFromPalette();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square-list"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square1"
+    style: {
+      backgroundColor: myColors[0]
+    }
+  }, "HTML & CSS Playground"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: myColors[1]
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/todolist"
-  }, "My To do List"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "To-do List"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TodoList__WEBPACK_IMPORTED_MODULE_1__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square2"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "btn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/calculator"
-  }, "My Calculator"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      backgroundColor: myColors[2]
+    }
+  }, "Hi"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square3"
+    style: {
+      backgroundColor: myColors[3]
+    }
+  }, "YO"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: myColors[4]
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square4"
+    style: {
+      backgroundColor: myColors[5]
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square5"
+    style: {
+      backgroundColor: myColors[6]
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square6"
+    style: {
+      backgroundColor: myColors[7]
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square7"
+    style: {
+      backgroundColor: myColors[8]
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
-    id: "square8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square9"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square10"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square11"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square12"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square13"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square14"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square15"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square16"
+    style: {
+      backgroundColor: myColors[9]
+    }
   })));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SquareList);
+
+/***/ }),
+
+/***/ "./client/components/Stories.jsx":
+/*!***************************************!*\
+  !*** ./client/components/Stories.jsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
+
+
+
+function Stories() {
+  function storyStyle() {
+    var pallete = ['#FCF9EA', '#BADFDB', '#F8A978', '#FFC5A1', '#F3F8FF', '#DEECFF', '#C6CFFF', '#E8D3FF'];
+    return pallete[Math.floor(Math.random() * pallete.length)];
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "page-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "stories square-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "B.Y.O. Cup Corner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Some human skills I practice to code along.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }))));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Stories);
 
 /***/ }),
 

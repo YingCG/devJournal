@@ -5,6 +5,8 @@ import Header from './Header'
 import Home from './Home'
 import TodoList from './TodoList'
 import Projects from './Projects'
+import Stories from './Stories'
+
 
 function App () {
   return (
@@ -13,7 +15,10 @@ function App () {
 
       <div className="app">
         <Route path="/" exact component={Home} />
-        <Route path="/todolist" component={TodoList} />
+        <Route path="/projects" exact component={Projects} />
+        <Route path="/stories" exact component={Stories} />
+        <Route path="/todolist" exact component={TodoList} />
+
       </div>
     </>
   )

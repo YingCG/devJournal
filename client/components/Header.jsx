@@ -5,13 +5,15 @@ import Nav from './Nav'
 function Header () {
   return (
     <>
+    <div className='Grid-cell'>
       <Link to="/"> <img src="/images/IconYing.svg" alt="logo" style={{ width: '70px', height: 'auto' }}/></Link>
       <div className="header-content">
         <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
-        <p className ="TopBottomLine">
+        <h4 className ="TopBottomLine">
           By ying: Some stories &amp; Internet I come across while learning to code.
-        </p>
-        <Nav />
+        </h4>
+      </div>
+      <Nav />
       </div>
     </>
   )

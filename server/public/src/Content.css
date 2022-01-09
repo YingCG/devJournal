@@ -1,7 +1,10 @@
-
 .title {
-    color: #0A81AB;;
-    font-size: 50px;
-    font-family:sans-serif;
+  color: #0a81ab;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.greeting {
+  font-size: 25px;
 }
 

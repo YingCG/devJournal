@@ -1,5 +1,5 @@
 {
-  "name": "mytodolist",
+  "name": "web-dev-journal",
   "version": "0.2.1",
   "description": "React components consuming Web APIs",
   "repository": {
@@ -28,10 +28,10 @@
     ]
   },
   "eslintConfig": {
-    "extends": "eda",
     "ignorePatterns": [
       "bundle.js"
-    ]
+    ],
+    "parser": "babel-eslint"
   },
   "author": "ying",
   "license": "ISC",
@@ -45,14 +45,21 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.3",
     "babel-preset-env": "^1.7.0",
+    "css-loader": "^6.5.1",
+    "css-modulesify": "^0.25.1",
     "eslint": "7.9.0",
     "eslint-config-eda": "0.1.4",
     "jest": "^26.6.3",
     "nodemon": "^2.0.6",
     "npm-run-all": "^4.1.5",
+    "postcss-color-rebeccapurple": "^2.0.0",
+    "postcss-modules-extract-imports": "^1.0.0",
+    "postcss-modules-local-by-default": "^1.0.0",
+    "postcss-modules-scope": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -60,13 +67,7 @@
     "superagent": "^6.1.0",
     "supertest": "^6.0.1",
     "webpack": "^5.10.3",
-    "webpack-cli": "^4.2.0",
-    "css-loader": "^6.5.1",
-    "css-modulesify": "^0.25.1",
-    "postcss-color-rebeccapurple": "^2.0.0",
-    "postcss-modules-extract-imports": "^1.0.0",
-    "postcss-modules-local-by-default": "^1.0.0",
-    "postcss-modules-scope": "^1.0.0"
+    "webpack-cli": "^4.2.0"
   },
   "dependencies": {
     "@babel/register": "^7.12.10",
