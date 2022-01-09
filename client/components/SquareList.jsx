@@ -32,22 +32,27 @@ function SquareList () {
     <>
       <div className='square-list'>
         <div className='square' style={{backgroundColor: myColors[0]}}>
-          HTML &amp; CSS Playground
+          HTML &amp; CSS Website  <br/><br/>
+          <button className='btn'><a href='https://yingcg.github.io/EyeCandyCinema/'>Eye Candy Cinema</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[1]}}>
-        <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button>
+          Javascript <br/><br/>
+          <button className='btn'><a href='https://yingcg.github.io/minesweeper/'>Minesweeper Game</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[2]}}>
-          Hi
+          HTML | CSS | JavaScript<br/><br/>
+          <button className='btn'><a href='https://yingcg.github.io/retouchbarn/'>Retouch Barn</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[3]}}>
-          YO
+          React App <br/><br/>
+          <button className='btn'><a href='http://photoimagecbd.herokuapp.com'>React App</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[4]}}>
+                            {/* <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button> */}
         </div>
 
         <div className='square' style={{backgroundColor: myColors[5]}}>

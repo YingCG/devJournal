@@ -1,4 +1,8 @@
-.button {
+.nav{
+float: right;  
+}
+  
+  .button {
     background-color: whitesmoke;
     padding: 10px 20px;
     cursor: pointer;
@@ -15,19 +19,20 @@
 
 .btn {
     background-color: whitesmoke;
-    padding: 10px 20px;
+    padding: 10px 25px;
     cursor: pointer;
     border: none;
     color: white;
     font-size: 18px;
 }
 
-.nav-btn{
-    /* background-color: thistle; */
-    padding: 5px 20px;
+.nav-btn {
+    padding: 0.5rem 2rem;
     cursor: pointer;
     border: none;
     color: white;
     font-size: 18px;
     border-radius: 25px;
+    margin: 0.5rem 0.2rem;
 }
+

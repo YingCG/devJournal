@@ -6,6 +6,7 @@ function Header () {
   return (
     <>
     <div className='Grid-cell'>
+    <div className="header">
       <Link to="/"> <img src="/images/IconYing.svg" alt="logo" style={{ width: '70px', height: 'auto' }}/></Link>
       <div className="header-content">
         <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
@@ -14,6 +15,7 @@ function Header () {
         </h4>
       </div>
       <Nav />
+      </div>
       </div>
     </>
   )
