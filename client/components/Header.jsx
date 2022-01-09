@@ -14,8 +14,8 @@ function Header () {
           By ying: Some stories &amp; Internet I come across while learning to code.
         </h4>
       </div>
-      <Nav />
       </div>
+      <Nav />
       </div>
     </>
   )

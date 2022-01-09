@@ -26,8 +26,10 @@ if (currentTime < 12){
 
     return (
         <>
-        <h2 className='greeting' style={customStyle}>{greeting}</h2>
-
+        <div className='greeting' style={customStyle}>
+        <h3>{greeting}! Welcome to my coding journal.</h3>
+       
+        </div>
         </>
     )
 }

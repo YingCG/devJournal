@@ -19,13 +19,24 @@ float: right;
 
 .btn {
     background-color: whitesmoke;
-    padding: 10px 25px;
+    padding: 0.3rem 1rem;
     cursor: pointer;
     border: none;
-    color: white;
-    font-size: 18px;
+    color: #006A71 ;
+    font-size: 15px;
+    margin: 0 0.3rem 0.3rem 0;
 }
 
+.dark{
+    background-color: #006A71 ;
+    padding: 0.3rem 1rem;
+    margin-left: 0.5rem;
+
+}
+
+.dark a{
+    color: thistle;
+}
 .nav-btn {
     padding: 0.5rem 2rem;
     cursor: pointer;
@@ -33,6 +44,6 @@ float: right;
     color: white;
     font-size: 18px;
     border-radius: 25px;
-    margin: 0.5rem 0.2rem;
+    margin: 0.5rem 0.5rem;
 }
 

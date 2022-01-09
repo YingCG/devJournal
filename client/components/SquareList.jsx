@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom'
+import JsBasic from './JsBasic';
 
 import TodoList from './TodoList'
 
@@ -33,11 +34,13 @@ function SquareList () {
       <div className='square-list'>
         <div className='square' style={{backgroundColor: myColors[0]}}>
           HTML &amp; CSS Website  <br/><br/>
-          <button className='btn'><a href='https://yingcg.github.io/EyeCandyCinema/'>Eye Candy Cinema</a></button>
+          <button className='btn'><a href='https://yingcg.github.io/EyeCandyCinema/' >Eye Candy Cinema</a></button>
+          <button className='btn'><a href='https://yingcg.github.io/blog/html-css.html'>My CSS Playground</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[1]}}>
           Javascript <br/><br/>
+          <button className='btn'><a href='https://yingcg.github.io/blog/js-fundamentals.html'>JavaScript Basic</a></button>
           <button className='btn'><a href='https://yingcg.github.io/minesweeper/'>Minesweeper Game</a></button>
         </div>
 
@@ -48,19 +51,21 @@ function SquareList () {
 
         <div className='square' style={{backgroundColor: myColors[3]}}>
           React App <br/><br/>
-          <button className='btn'><a href='http://photoimagecbd.herokuapp.com'>React App</a></button>
+          <button className='btn'><a href='http://photoimagecbd.herokuapp.com'>Photo Image CBD</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[4]}}>
-          Express Router <br/><br/>
+          Templating language &amp; Express Router <br/><br/>
           <button className='btn'><a href='https://pupparazi-ying.herokuapp.com/puppies'>Pupparazzi</a></button>
         </div>
 
         <div className='square' style={{backgroundColor: myColors[5]}}>
-                            {/* <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button> */}
+          React Form with database
+          {/* <button className='btn'><Link to='/todolist'>To-do List</Link><TodoList/></button> */}
         </div>
 
         <div className='square' style={{backgroundColor: myColors[6]}}>
+          React with API
         </div>
 
         <div className='square' style={{backgroundColor: myColors[7]}}>

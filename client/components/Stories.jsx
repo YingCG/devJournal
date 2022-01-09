@@ -13,11 +13,11 @@ function Stories() {
   return (
     <>
       <div className="page-container">
-
-        <div className="stories square-list">
-          <div className="square" style={{ backgroundColor: storyStyle() }}>
-          <h2>B.Y.O. Cup Corner</h2>
+<h2>B.Y.O. Cup Corner</h2>
           <h3>Some human skills I practice to code along.</h3>
+        {/* <div className="stories square-list">
+          <div className="square" style={{ backgroundColor: storyStyle() }}>
+          
         </div>
 
         <div className="square" style={{ backgroundColor: storyStyle() }}>
@@ -46,7 +46,7 @@ function Stories() {
 
         <div className="square" style={{ backgroundColor: storyStyle() }}>
         </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
