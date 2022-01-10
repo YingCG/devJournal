@@ -8,7 +8,7 @@
   },
   "main": "server/index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node index",
     "test": "jest --watchAll",
     "sass": "node-sass -w scss/ -o css/ --recursive",
     "dev": "run-p dev:client dev:server",
