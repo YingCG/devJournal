@@ -8,13 +8,12 @@
   },
   "main": "server/index.js",
   "scripts": {
-    "start": "node index",
+    "start": "run-p webpack server",
+    "dev": "run-p client server",
+    "webpack": "webpack --config client/webpack.config.js",
+    "client": "npm run webpack -- --watch",
+    "server": "node server",
     "test": "jest --watchAll",
-    "sass": "node-sass -w scss/ -o css/ --recursive",
-    "dev": "run-p dev:client dev:server",
-    "dev:client": "webpack --watch --config client/webpack.config.js",
-    "dev:server": "nodemon --watch server",
-    "knex": "knex --knexfile server/db/knexfile.js",
     "lint": "eslint --ext .js,.jsx ."
   },
   "babel": {
@@ -33,6 +32,11 @@
     ],
     "parser": "babel-eslint"
   },
+  "build": "run-p build:client build:server",
+"build:client": "npm run webpack -- --mode production",
+"build:server": "npm run knex -- migrate:latest",
+"webpack": "webpack --config ./client/webpack.config.js",
+"knex": "knex --knexfile ./server/db/knexfile.js",
   "author": "ying",
   "license": "ISC",
   "engines": {
