@@ -4,7 +4,7 @@
   "description": "React components consuming Web APIs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-academy-challenges/react-to-web-api.git"
+    "url": "git+https://github.com/YingCG/devJournal"
   },
   "main": "server/index.js",
   "scripts": {
@@ -89,8 +89,5 @@
       ]
     ]
   },
-  "bugs": {
-    "url": "https://github.com/dev-academy-challenges/react-to-web-api/issues"
-  },
-  "homepage": "https://github.com/dev-academy-challenges/react-to-web-api#readme"
+  "homepage": "https://github.com/YingCG/devJournal"
 }
