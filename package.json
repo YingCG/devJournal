@@ -36,7 +36,7 @@
   "author": "ying",
   "license": "ISC",
   "engines": {
-    "node": "v14.18.1"
+    "node": "v14.x"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -80,7 +80,8 @@
     "knex": "^0.21.13",
     "node-sass": "^7.0.0",
     "sass": "^1.45.0",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.0",
+    "cookie-parser": "~1.4.4"
   },
   "browserify": {
     "transform": [
