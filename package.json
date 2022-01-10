@@ -32,11 +32,15 @@
     ],
     "parser": "babel-eslint"
   },
-  "build": "run-p build:client build:server",
-"build:client": "npm run webpack -- --mode production",
-"build:server": "npm run knex -- migrate:latest",
-"webpack": "webpack --config ./client/webpack.config.js",
-"knex": "knex --knexfile ./server/db/knexfile.js",
+    "scripts": {
+    "start": "run-p webpack server",
+    "dev": "run-p client server",
+    "webpack": "webpack --config client/webpack.config.js",
+    "client": "npm run webpack -- --watch",
+    "server": "node server",
+    "test": "jest --watch --noStackTrace",
+    "lint": "eslint --ext .js,.jsx ."
+  },
   "author": "ying",
   "license": "ISC",
   "engines": {
