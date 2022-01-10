@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import TodoItem from './TodoItem'
-import { getTodoList } from '../api/api'
+import { getTodoList } from '../api'
 
 function TodoList () {
   const [todoList, setTodoList] = useState([])

@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const request = require('superagent')
 
-const db = require('../db/db')
-
+// Server use '/api/v1/home'
 router.get('/', (req, res) => {
   db.getTodoList()
     .then(todos => {
