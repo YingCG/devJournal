@@ -13,7 +13,7 @@
     "webpack": "webpack --config client/webpack.config.js",
     "client": "npm run webpack -- --watch",
     "server": "node server",
-    "test": "jest --watchAll",
+    "test": "jest --watch --noStackTrace",
     "lint": "eslint --ext .js,.jsx ."
   },
   "babel": {
@@ -31,15 +31,6 @@
       "bundle.js"
     ],
     "parser": "babel-eslint"
-  },
-    "scripts": {
-    "start": "run-p webpack server",
-    "dev": "run-p client server",
-    "webpack": "webpack --config client/webpack.config.js",
-    "client": "npm run webpack -- --watch",
-    "server": "node server",
-    "test": "jest --watch --noStackTrace",
-    "lint": "eslint --ext .js,.jsx ."
   },
   "author": "ying",
   "license": "ISC",

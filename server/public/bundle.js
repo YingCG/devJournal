@@ -157,6 +157,37 @@ function Greeting() {
 
 /***/ }),
 
+/***/ "./client/components/Growth.jsx":
+/*!**************************************!*\
+  !*** ./client/components/Growth.jsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function Growth() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    id: "square".concat(props.id)
+  }, todoList.map(function (todoItem) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+      key: todoItem.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(TodoItem, {
+      todo: todoItem
+    }), " ");
+  })));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Growth);
+
+/***/ }),
+
 /***/ "./client/components/Header.jsx":
 /*!**************************************!*\
   !*** ./client/components/Header.jsx ***!
@@ -686,6 +717,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
+/* harmony import */ var _Yet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Yet */ "./client/components/Yet.jsx");
+
 
 
 
@@ -697,7 +730,59 @@ function Stories() {
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "page-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "B.Y.O. Cup Corner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Some human skills I practice to code along.")));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "B.Y.O. Cup Corner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Here are some human skills I get inspired. I am practicing with check-list format while I code along."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "stories square-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Yet__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: storyStyle()
+    }
+  }))));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Stories);
@@ -822,6 +907,54 @@ function TodoList() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TodoList);
+
+/***/ }),
+
+/***/ "./client/components/Yet.jsx":
+/*!***********************************!*\
+  !*** ./client/components/Yet.jsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _Growth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Growth */ "./client/components/Growth.jsx");
+
+
+
+function Yet() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "yet"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+    className: "checkForm"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "The power of YET"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "checkbox",
+    className: "chkboxarray"
+  }), "I can't do this ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "checkbox",
+    className: "chkboxarray"
+  }), "It doesn't work ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "checkbox",
+    className: "chkboxarray"
+  }), "I don't know ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "checkbox",
+    className: "chkboxarray"
+  }), "It doesn't make sense ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "checkbox",
+    name: "chkboxarray"
+  }), "It don't get it ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "checkbox",
+    className: "chkboxarray"
+  }), "I am not good at this ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "checkForm btn"
+  }, "Read more"))));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Yet);
 
 /***/ }),
 
