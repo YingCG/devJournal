@@ -7,7 +7,7 @@ function Header () {
     <>
     <div className='Grid-cell'>
     <div className="header">
-      <Link to="/"> <img src="/images/IconYing.svg" alt="logo" style={{ width: '70px', height: 'auto' }}/></Link>
+      <Link to="/"> <img src="/images/YingCG.svg" alt="logo" style={{ width: '70px', height: 'auto' }}/></Link>
       <div className="header-content">
         <h1>WEB DESIGN &amp; DEVELOPE JOURNAL</h1>
         <h4 className ="TopBottomLine">

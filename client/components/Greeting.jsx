@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 function Greeting() {
 const date = new Date();
@@ -14,7 +14,7 @@ if (currentTime < 12){
     customStyle.color = '#FFCE45'
 } else if (currentTime < 18) {
     greeting = 'Good Afternoon'
-    customStyle.color = '#A3423C'
+    customStyle.color = '#ED0BFF'
 } else if (currentTime > 20){
     greeting = 'Good Night'
     customStyle.color = '#344CB7'

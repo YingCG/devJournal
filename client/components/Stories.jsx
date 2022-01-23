@@ -1,53 +1,25 @@
 import React from "react";
-import SquareList from "./SquareList";
-import Yet from "./Yet";
+import storiesData from '../data/humanskills'
+import Story from "./Story";
 
 function Stories() {
 
-    function storyStyle() {
-        const pallete = ['#FCF9EA','#BADFDB', '#F8A978','#FFC5A1','#F3F8FF', '#DEECFF', '#C6CFFF', '#E8D3FF']
-        return pallete[Math.floor(Math.random() * pallete.length)]
-      }
-
-
+  // const [toggle, setToggle] = useState(0)
 
   return (
     <>
       <div className="page-container">
-          <h2>B.Y.O. Cup Corner</h2>
-          <p>Here are some human skills I get inspired. I am practicing with check-list format while I code along.</p>
+          <h2>B.Y.O. Cup Corner. </h2>
+          <p> Every problem I come across is a learning journey for me, here are some Human skills I practice to code along. To remind myself practicing how to be kind, have help to growth and develop my strength.</p>
+          <div className="stories square-list">
+            {storiesData.map (stories => {
+              return (
+              <Story key={stories.id} title={stories.title} checklist={stories.checklist} details={stories.description} />
+              )
+            })}
 
-        <div className="stories square-list">
-          <div className="square" style={{ backgroundColor: storyStyle() }}> <Yet/></div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-
-        <div className="square" style={{ backgroundColor: storyStyle() }}>
-        </div>
-        </div>
-
+          </div>
+      
       </div>
     </>
   );

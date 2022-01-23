@@ -43,12 +43,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./client/components/Header.jsx");
 /* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Home */ "./client/components/Home.jsx");
 /* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TodoList */ "./client/components/TodoList.jsx");
 /* harmony import */ var _Projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Projects */ "./client/components/Projects.jsx");
 /* harmony import */ var _Stories__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Stories */ "./client/components/Stories.jsx");
+/* harmony import */ var _Css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Css */ "./client/components/Css.jsx");
+/* harmony import */ var _Humanskills__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Humanskills */ "./client/components/Humanskills.jsx");
+
+
 
 
 
@@ -60,19 +64,26 @@ __webpack_require__.r(__webpack_exports__);
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "app"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
     path: "/",
     exact: true,
     component: _Home__WEBPACK_IMPORTED_MODULE_2__["default"]
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
     path: "/projects",
     exact: true,
     component: _Projects__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+    path: "/projects/css",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Css__WEBPACK_IMPORTED_MODULE_6__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
+    path: "/humanskills",
+    exact: true,
+    component: _Humanskills__WEBPACK_IMPORTED_MODULE_7__["default"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
     path: "/stories",
     exact: true,
     component: _Stories__WEBPACK_IMPORTED_MODULE_5__["default"]
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Route, {
     path: "/todolist",
     exact: true,
     component: _TodoList__WEBPACK_IMPORTED_MODULE_3__["default"]
@@ -111,6 +122,111 @@ function Ascii() {
 
 /***/ }),
 
+/***/ "./client/components/Css.jsx":
+/*!***********************************!*\
+  !*** ./client/components/Css.jsx ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+ // import {useNavigate, useParams} from 'react-router-dom'
+
+function Css() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square1",
+    className: "square"
+  }, ".square", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "{ ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "min - width : 250px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "width: 270px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "height: 270px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "padding: 20px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "font-weight: bold;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, ".square::after{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} content: \"\";", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "display: block;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "padding-bottom: 100%;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "  #square1{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} background-color:  #F4DFD0;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square2",
+    className: "square"
+  }, "Margin", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "#square2{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} background-color: thistle;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "margin: 10px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "width: 250px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "height: 250px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square3",
+    className: "square"
+  }, "Border", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "#square3{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} background-color: #7EB5A6;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "border-style: solid;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "border-width: 10px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "border-color: #B5EAEA;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square4",
+    className: "square"
+  }, "Padding", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "#square4{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} background-color: #006A71;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "padding: 20px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "color: thistle;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "#square4 p{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} color: thistle;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square5",
+    className: "square"
+  }, "classNamees", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "classNamees can apply the same style a group of elements, you can add more than one className to the element."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Use ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, ".(Dot)"), " to style className"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "square"), " is the className name on this page")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square6",
+    className: "square"
+  }, "id", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "ID apply on only one single element.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "Use ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "#"), " to style className"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "square1-15"), "Each square have a unique ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square7",
+    className: "square"
+  }, "relative What are the differences between relative, absolute, and fixed positioning?", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " #square7outside{position}: relative;}", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "#square7inside{position}: relative;}", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square7outside"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square7inside"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "(On top, navigation buttons are using relative)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square8",
+    className: "square"
+  }, "absolute", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "{position}: absolute;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "background-color: #758086;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "width: 110px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "height: 110px;}"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square8outside"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square8inside"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square9",
+    className: "square"
+  }, "fixed position", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Always stays in the same place even if the page is scrolled, see ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: "highlight"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "#fix-square")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "fix-square"
+  }, "#fix-square{", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} position: fixed;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "background-color: #B5EAEA;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "margin: 10px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "width: 165px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "height: 165px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "padding: 10px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square10",
+    className: "square sticky-element"
+  }, ".sticky", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "position: sticky;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "bottom: 0;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "background-color: yellow;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "padding: 50px;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), "}", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "To see the effect of sticky check out yello banner")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square10outside"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square10inside"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square11",
+    className: "square"
+  }, "inline", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "What does it mean to display inline vs inline blocks? To displays the element on the same line for example here: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "p tag "), " in different section still show continuing block", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "inline-content"
+  }, "#square11"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "inline-content"
+  }, "p{"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "inline-content"
+  }, "display: inline;}"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: "inline-content"
+  }, "display: inline;}")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square12",
+    className: "square"
+  }, "inline blocks", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Alright, let's move on to inline-block. It's essentially the same thing as inline, except that you can set height and width values.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square12a"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square12b"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "square12c"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square13",
+    className: "square"
+  }, "circle", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "#square13", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), " p{"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "position: absolute;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "top:50%;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "left: 50%;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "margin-right: -50%;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "transform: translate(-50%,-50%)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "}"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square14",
+    className: "square"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    id: "square15",
+    className: "square"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "triangle-right"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, ".triangle-right ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "} position: relative;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "border-top: 60px solid transparent; ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "border-left: 100px solid white;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "border-bottom: 60px solid transparent;", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), "}"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "sticky"
+  }, "I will stick to the screen when you reach my scroll position"));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Css);
+
+/***/ }),
+
 /***/ "./client/components/Greeting.jsx":
 /*!****************************************!*\
   !*** ./client/components/Greeting.jsx ***!
@@ -138,7 +254,7 @@ function Greeting() {
     customStyle.color = '#FFCE45';
   } else if (currentTime < 18) {
     greeting = 'Good Afternoon';
-    customStyle.color = '#A3423C';
+    customStyle.color = '#ED0BFF';
   } else if (currentTime > 20) {
     greeting = 'Good Night';
     customStyle.color = '#344CB7';
@@ -154,37 +270,6 @@ function Greeting() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Greeting);
-
-/***/ }),
-
-/***/ "./client/components/Growth.jsx":
-/*!**************************************!*\
-  !*** ./client/components/Growth.jsx ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-function Growth() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    id: "square".concat(props.id)
-  }, todoList.map(function (todoItem) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-      key: todoItem.id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(TodoItem, {
-      todo: todoItem
-    }), " ");
-  })));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Growth);
 
 /***/ }),
 
@@ -214,7 +299,7 @@ function Header() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
     to: "/"
   }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "/images/IconYing.svg",
+    src: "/images/YingCG.svg",
     alt: "logo",
     style: {
       width: '70px',
@@ -265,247 +350,33 @@ function Home() {
 
 /***/ }),
 
-/***/ "./client/components/JsBasic.jsx":
-/*!***************************************!*\
-  !*** ./client/components/JsBasic.jsx ***!
-  \***************************************/
-/***/ (() => {
+/***/ "./client/components/Humanskills.jsx":
+/*!*******************************************!*\
+  !*** ./client/components/Humanskills.jsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// import React from 'react'
-// function JsBasic () {
-//     return (
-//       <>
-//       <div>
-//        <div className="Content-question-answer">
-//     {/* <!-- An analogy to describe the differences between HTML and CSS --> */}
-//     <div className="question">JavaScript and its relationship to HTML and CSS</div>
-//            <div className="oneColum">
-//           <h4>HTML</h4>
-//             To build the architecture of a website.
-//           <h4>CSS </h4>
-//             To apply styles of the space. We specify the layout according to the moodboard and concept we are achieving. 
-//           <h4>JavaScript</h4>
-//             Like connect to the electric and water supply, all this little behaviour to make beautiful space better experience while enjoy and stay.
-//             JavaScript can access and change HTML elements,HTML attributes and CSS styles of a website. 
-//     </div>
-//     {/* <!-- Control Flow & loop --> */}
-//     <div className="question">Control Flow &amp; Loop</div>
-//       <div className ="answer-list">
-//         <div className="answer">
-//           <h4>Control Flow </h4>
-//           <p>Use to execution code only under certain conditions. </p>
-//           <ul>
-//           <li className="InlineLayout">Conditional statement</li>
-//           <li className="InlineLayout">Execute statement</li>
-//           <li className="InlineLayout">True or false</li>
-//         </ul>    
-//         < className="code-Example"> 
-//           <h4>If  |  else if  |  else</h4>
-//           <h5>Quite often have a var/ object on top to give the function working</h5>
-//               var = newDate();<br/>
-//               var hrs = myDate.getHours();<br/>
-//               var greet;<br/>
-//               <br/>
-//               <h5>// if set the condition to return true</h5>
-//               if (hrs &lt; 12){<br/>
-//                greet ="Good Morning";<br/>
-//                <h5>// code block to be executed if statement is true</h5>
-//               }<br/><br/>
-//               else if(hrs &gt;=12 &amp;&amp; hrs &lt; 17){<br/>
-//               greet ="Good Afternoon";<br/>
-//               <h5>// code block to be executed if statement is true</h5>
-//               }<br/><br/>
-//               else{
-//               <h5>// code block to be executed if statement is true</h5>
-//               }
-//         </div>
-//       </div>
-//         <div className="answer">
-//           <h4>Loop</h4>
-//           <p>Loop through a block of code a number of times while the condition is true</p>
-//             <div className="split">
-//               <div className="code-Example"> 
-//                 <h4>for</h4>
-//                 for(&#10122;let i=0; &#10123;i &lt; length; &#10124;i++)<br/>
-//                 { &#10125; return
-//                   <h5>//  code block to be executed</h5>
-//                 }
-//               </div>
-//               <div className="code-Example"> 
-//                 <h4>while</h4>
-//                 &#10122; let i=0<br/>
-//               while (&#10123;i &lt; length)<br/>
-//               { &#10125; return
-//                 <h5>//  code block to be executed</h5>
-//                 &#10124;i++<br/>
-//               }
-//               </div>
-//             </div> 
-//             <div className="split">
-//               <div className="code-Example"> 
-//                 <br/>
-//                 <h4>for...in  |  for...of  |  forEach</h4>
-//                 const array=['a', 'b', 'c'];<br/>
-//                 for (key in object){
-//                   <h5>// code block to be executed</h5>
-//                 }
-//               </div>
-//               <div className="code-Example"> 
-//                 <p>ForEach goes by value and calls a callback function <br/>
-//                   For of goes by value<br/><br/>
-//                   For in goes by index<br/>
-//                   when used on objects, for in goes by properties</p>
-//               </div>
-//             </div>
-//           <p>Plus plus or minus munis behave different infront or behind</p>
-//           <div className="split">
-//             <div className="code-Example"> 
-//                 x = 2; <br/>
-//                 y = x++;<br/>
-//                 {<h5>here y is 2, x is 3</h5>}
-//             </div>
-//             <div className="code-Example"> 
-//               x = 2; <br/>
-//               y = ++x;<br/>
-//               {<h5>here y is 3, x is 2</h5>}
-//               </div>
-//             </div>
-//         </div>
-//       </div>
-//     </div>
-//     {/* // <!-- Describe what the DOM is and an example of how you might interact with it. --> */}
-//     <div className="question" id="DOM-Square">The DOM</div> 
-//         <div className ="answer-list">
-//           <div className="answer">
-//             <h4>Document Object Model </h4>
-//             <p> HTML DOM allows JavaScript to react to HTML event by defining the all elements in a website as objects. To access the objects, or its properties, we method.          
-//               <h4>Steps to manipulate DOM: </h4>
-//                   1. Using selector to choose the HTML object or properties.<br/>
-//                   2. Add the event listener<br/>
-//                   3. To assign an event handler<br/>
-//                   4. We calling the event handler from where it need to happens.</p>
-//               <h4>Commom method we use as Selector:</h4>
-//               <ul>
-//                 <li className="InlineLayout">this</li>
-//                 <li className="InlineLayout">getElementByTagName</li>
-//                 <li className="InlineLayout">getElementByclassNameName</li>
-//                 <li className="InlineLayout">getElementById</li>
-//                 <li className="InlineLayout">querySelector</li>
-//                 <li className="InlineLayout">querySelectorAll</li>
-//               </ul>
-//           </div>
-//         <div className="answer">
-//           <h4>Commom Event listerner:</h4>
-//           <ul>
-//             <li className="InlineLayout">'onload'</li>
-//             <li className="InlineLayout">'click'</li>
-//             <li className="InlineLayout">'onclick'</li>
-//             <li className="InlineLayout">'mouseover'</li>
-//             <li className="InlineLayout">'mouseout'</li>
-//             <li className="InlineLayout">'toggel'</li>
-//           </ul>
-//           <h4>To change the selected object:</h4>
-//               <ul>
-//               <li className="InlineLayout">element.innerHTML</li>
-//               <li className="InlineLayout">element.attribute</li>
-//               <li className="InlineLayout">element.style.property</li>
-//               <li className="InlineLayout">element.setAttribute(attribute, value)</li>
-//           </ul>
-//         </div>
-// </div>
-//     {/* // <!-- Explain the difference between accessing data from arrays and objects. --> */}
-//     <div className="question" id="Arrays-Objects-Square">Objects and Arrays</div>
-//     {/* // <!-- <div className="invisible" id="Arrays-Objects-answer">Arrays and Objects</div> --> */}
-//     <div className ="answer-list">
-//         <div className="twoColumn">
-//           <h4>Objects </h4>
-//           A list of properties consist key and value
-//             <li className="InlineLayout">var</li>
-//             <li className="InlineLayout">const</li>
-//             <li className="InlineLayout">let</li>
-//             <p className="code-Example"> 
-//               var person ={ <br/>
-//                 key: value,<br/>
-//                 name: JavaScript,<br/>
-//                 level: 1<br/>
-//               };
-//             </p>
-//   </div>
-//         <div className="twoColumn"><h4>Arrays</h4>
-//           Store a list of items or objects in a single variable, useful when creating orderded colletions. Item can be added and removed from beginning or end of an array using:
-//           <ul>
-//             <li className="InlineLayout">push()</li>
-//             <li className="InlineLayout">pop()</li>
-//             <li className="InlineLayout">unshift()</li>
-//             <li className="InlineLayout">shift()</li>
-//             </ul>
-//             <div className="code-Example"> 
-//               var weekdays ={'Monday','Tuesday','Wednesday','Thursday','Friday' };
-//             </div>
-//         </div>  
-// </div>
-//     {/* // <!-- <div className="invisible" id="Accessing-answer">Difference between accessing data from arrays and objects</div> --> */}
-//     <div className="question" id="Accessing-Square">Accessing data from arrays and objects</div>
-//       <div className ="answer-list">
-//         <div className="twoColumn"><h4>To access Objects </h4>
-//           Using dot. or br/acket [ ]notation<br/><br/>
-//           <div className="code-Example">
-//             <h4>dot(.) </h4>
-//             object.key <h5>// return value</h5><br/>
-//             <h4>br/acket [ ] </h4>       
-//             object['key'] <h5>// return value</h5>
-//           </div>
-//         </div>
-//         <div className="twoColumn"><h4>To access Arrays</h4>
-//           using br/acket [ ] select index number start from 0<br/><br/>
-//           <div className="code-Example">
-//             <h4>br/acket [ index number ] </h4>       
-//             arrayList[0] 
-//             <h5>// return first element in array</h5>
-//           </div>
-//         </div>
-//       </div>
-// {/* //   <!-- Explain what functions are and why they are useful. --> */}
-//   <div className="question" id="Functions-Square">Functions and why they are useful</div>
-//     <div className ="answer-list">
-//       <div className ="answer">
-//         <p>Function group code together<br/>
-//         Function reuse the group of code<br/>
-//         Function can take argument, can return value<br/>
-//         There are function without argument, one argument and multiple argument<br/>
-//         </p>
-//         <h4>function () can write as () =&gt;</h4>
-//         <p>
-//         A parameter is the variable listed inside the parentheses in the function definition.</p>
-//         <p>
-//         An argument is the value that is sent to the function when it is called.</p>
-//         </div>
-//         <div className ="answer">
-//             <div className="code-Example">
-//               <h5>// First way to write Function</h5>
-//               function add(a, b){<br/>
-//                 return a + b + 100;<br/>
-//               }
-//                 <h5>// Second way to write Function</h5>
-//                 var add = function(a, b) {<br/>
-//                   return a + b;<br/>
-//                 };
-//                 <h5>// Third way to write Arrow Function</h5>
-//                 (a, b) =&gt; a + b + 100;
-//                 <h5>// Function without arguments</h5>
-//                 let a = 4;<br/>
-//                 let b = 2;<br/>
-//                 () =&gt; a + b + 100;
-//                 <h5>
-//                 function (){return a + b + 100;}</h5>
-//               </div>
-//               </div>
-//               </div>
-//               </div>
-//       </>
-//     )
-//   }
-// export default JsBasic
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+function Humanskills() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "page-container"
+  }, "Embrace with human perspective, creating a unique approach that balances people, process, and technology", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "btn"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/stories"
+  }, "Self reflection checklist"))));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Humanskills);
 
 /***/ }),
 
@@ -540,9 +411,9 @@ function Nav() {
   }, "Projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "nav-btn"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/stories",
+    to: "/humanskills",
     className: "nav-link"
-  }, "Stories"))));
+  }, "Human Skills"))));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Nav);
@@ -565,10 +436,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function Projects() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "page-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "A project road map on my coding practice to become full-stack developer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "To Increase Effectiveness and Capacity, I also practice human-skills along side through self reflection and emotional regulation. ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SquareList__WEBPACK_IMPORTED_MODULE_1__["default"], null))));
 }
@@ -589,11 +461,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _JsBasic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./JsBasic */ "./client/components/JsBasic.jsx");
-/* harmony import */ var _JsBasic__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_JsBasic__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TodoList */ "./client/components/TodoList.jsx");
-
-
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 
 
 
@@ -624,18 +492,31 @@ function SquareList() {
     style: {
       backgroundColor: myColors[0]
     }
+  }, "UX design", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "btn"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://xd.adobe.com/view/5bee77bc-6104-48b2-b6ab-e0dbcecbaaf7-0ebd/"
+  }, "Adobe XD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "btn"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://www.figma.com/file/HlozULH29aHAGHduxfEeYC/Resource-Art?node-id=1%3A791"
+  }, "Figma"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "square",
+    style: {
+      backgroundColor: myColors[1]
+    }
   }, "HTML & CSS Website  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     href: "https://yingcg.github.io/EyeCandyCinema/"
   }, "Eye Candy Cinema")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: "https://yingcg.github.io/blog/html-css.html"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/projects/css"
   }, "My CSS Playground"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
-      backgroundColor: myColors[1]
+      backgroundColor: myColors[2]
     }
   }, "Javascript ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
@@ -648,7 +529,7 @@ function SquareList() {
   }, "Minesweeper Game"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
-      backgroundColor: myColors[2]
+      backgroundColor: myColors[3]
     }
   }, "HTML | CSS | JavaScript", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
@@ -657,16 +538,20 @@ function SquareList() {
   }, "Retouch Barn"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
-      backgroundColor: myColors[3]
+      backgroundColor: myColors[4]
     }
-  }, "React App ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, "React App ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "This is a web app that I build base on user experience research."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     href: "http://photoimagecbd.herokuapp.com"
-  }, "Photo Image CBD"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Photo Image CBD")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    className: "btn"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/projects/photoimage"
+  }, "About the project"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
-      backgroundColor: myColors[4]
+      backgroundColor: myColors[5]
     }
   }, "Templating language & Express Router ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
@@ -675,29 +560,24 @@ function SquareList() {
   }, "Pupparazzi"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
-      backgroundColor: myColors[5]
-    }
-  }, "React Form with database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
       backgroundColor: myColors[6]
     }
-  }, "React with API"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "Client Side Routing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
       backgroundColor: myColors[7]
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "React Form with database"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
       backgroundColor: myColors[8]
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, "API"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
       backgroundColor: myColors[9]
     }
-  })));
+  }, "Redux")));
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SquareList);
@@ -716,76 +596,88 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _SquareList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SquareList */ "./client/components/SquareList.jsx");
-/* harmony import */ var _Yet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Yet */ "./client/components/Yet.jsx");
+/* harmony import */ var _data_humanskills__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/humanskills */ "./client/data/humanskills.js");
+/* harmony import */ var _Story__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Story */ "./client/components/Story.jsx");
 
 
 
 
 function Stories() {
+  // const [toggle, setToggle] = useState(0)
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "page-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "B.Y.O. Cup Corner. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, " Every problem I come across is a learning journey for me, here are some Human skills I practice to code along. To remind myself practicing how to be kind, have help to growth and develop my strength."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "stories square-list"
+  }, _data_humanskills__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (stories) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Story__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: stories.id,
+      title: stories.title,
+      checklist: stories.checklist,
+      details: stories.description
+    });
+  }))));
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Stories);
+
+/***/ }),
+
+/***/ "./client/components/Story.jsx":
+/*!*************************************!*\
+  !*** ./client/components/Story.jsx ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+function Story(props) {
   function storyStyle() {
     var pallete = ['#FCF9EA', '#BADFDB', '#F8A978', '#FFC5A1', '#F3F8FF', '#DEECFF', '#C6CFFF', '#E8D3FF'];
     return pallete[Math.floor(Math.random() * pallete.length)];
   }
 
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      checked = _useState2[0],
+      setChecked = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "page-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, "B.Y.O. Cup Corner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Here are some human skills I get inspired. I am practicing with check-list format while I code along."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "stories square-list"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "square",
     style: {
       backgroundColor: storyStyle()
     }
-  }, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Yet__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "square",
-    style: {
-      backgroundColor: storyStyle()
-    }
-  }))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, " ", props.title, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
+    className: "checklist",
+    key: props.id
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, props.checklist.map(function (checklistItem) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: checklistItem.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+      type: "checkbox",
+      checked: checked
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, checklistItem.content));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", null, " ", props.description, " "))));
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Stories);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Story);
 
 /***/ }),
 
@@ -910,10 +802,10 @@ function TodoList() {
 
 /***/ }),
 
-/***/ "./client/components/Yet.jsx":
-/*!***********************************!*\
-  !*** ./client/components/Yet.jsx ***!
-  \***********************************/
+/***/ "./client/data/humanskills.js":
+/*!************************************!*\
+  !*** ./client/data/humanskills.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -921,40 +813,154 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Growth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Growth */ "./client/components/Growth.jsx");
-
-
-
-function Yet() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "yet"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
-    className: "checkForm"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, "The power of YET"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    type: "checkbox",
-    className: "chkboxarray"
-  }), "I can't do this ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    type: "checkbox",
-    className: "chkboxarray"
-  }), "It doesn't work ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    type: "checkbox",
-    className: "chkboxarray"
-  }), "I don't know ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    type: "checkbox",
-    className: "chkboxarray"
-  }), "It doesn't make sense ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    type: "checkbox",
-    name: "chkboxarray"
-  }), "It don't get it ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    type: "checkbox",
-    className: "chkboxarray"
-  }), "I am not good at this ... YET", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "checkForm btn"
-  }, "Read more"))));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Yet);
+var humanskills = [{
+  id: 1,
+  title: "Value & Identity",
+  description: "Who am I as a person? I would like to be a developer, to provide solutions where meets functionality and aesthetic with technology.",
+  checklist: [{
+    id: 1,
+    content: "Long term goal"
+  }, {
+    id: 2,
+    content: "Short term goal"
+  }, {
+    id: 3,
+    content: "My strengths and limitations"
+  }, {
+    id: 4,
+    content: "Non-technical - human skills I like to see developed"
+  }, {
+    id: 5,
+    content: "Have I stay focus, by putting ideas in action"
+  }, {
+    id: 5,
+    content: "How to manage myself to work productively and safely"
+  }]
+}, {
+  id: 2,
+  title: "Trust myself own ability to learn",
+  description: "Practing make perfect, by willingness to learn and practice we can get smarter.",
+  checklist: [{
+    id: 1,
+    content: "Don't Rush to the idea of I CAN'T"
+  }, {
+    id: 2,
+    content: "Don't Rush to the idea of I CAN'T"
+  }, {
+    id: 3,
+    content: "Add a 'yet' word behind of every 'I can't do it'"
+  }, {
+    id: 4,
+    content: "Ask myself: What can I do to improve next? "
+  }, {
+    id: 5,
+    content: "Can I make this experience more fun? "
+  }]
+}, {
+  id: 3,
+  title: "The Benifit of Nueroplasticity",
+  description: "Nueroplasticity meaning brain's ability to change and adapt as a result of experiences. It can amend the structure and function of the barin. ",
+  checklist: [{
+    id: 1,
+    content: " The ability to learn new things."
+  }, {
+    id: 2,
+    content: "The ability to enhance our existing cognitive capabilities"
+  }, {
+    id: 3,
+    content: "Recovery from strokes and traumatic brain injuries"
+  }, {
+    id: 4,
+    content: "To help cognitive behavior therapy in treating depression"
+  }]
+}, {
+  id: 4,
+  title: 'The power of YET',
+  description: "Every expert was once a beginner. To feed my brain with the power of YET help me to discover my own learning pattern when I experience confusion, frustration, lack of context. Practing make perfect, by willingness to learn and practice, take a step back and look at the same challenge from an alternative perspective. Retry with fresh pice of mind, everyday I learn a little more",
+  checklist: [{
+    id: 1,
+    content: "I can't do this ... YET"
+  }, {
+    id: 2,
+    content: "It doesn't work ... YET"
+  }, {
+    id: 3,
+    content: "I don't know ... YET"
+  }, {
+    id: 4,
+    content: "It doesn't make sense ... YET"
+  }, {
+    id: 5,
+    content: "It don't get it ... YET"
+  }, {
+    id: 6,
+    content: "I am not good at this ... YET"
+  }]
+}, {
+  id: 5,
+  title: 'Weekly Practice to improve my brain plasticity',
+  description: "Every expert was once a beginner. To feed my brain with the power of YET help me to discover my own learning pattern when I experience confusion, frustration, lack of context. Practing make perfect, by willingness to learn and practice, take a step back and look at the same challenge from an alternative perspective. Retry with fresh pice of mind, everyday I learn a little more",
+  checklist: [{
+    id: 1,
+    content: "Enriching my environment"
+  }, {
+    id: 2,
+    content: "Eat well"
+  }, {
+    id: 3,
+    content: "Exercise"
+  }, {
+    id: 4,
+    content: "Spend some time on my hobby"
+  }, {
+    id: 5,
+    content: "Get Plenty of sleep"
+  }, {
+    id: 6,
+    content: "Practice mindfulness"
+  }, {
+    id: 7,
+    content: "Watch one good movie"
+  }]
+}, {
+  id: 6,
+  title: 'Solve problem creatively as a developer',
+  description: "I would like to be a developer, to provide solutions where meets functionality and aesthetic with technology.",
+  checklist: [{
+    id: 1,
+    content: "Define the problem"
+  }, {
+    id: 2,
+    content: "Project Planning"
+  }, {
+    id: 3,
+    content: "Coding the program"
+  }, {
+    id: 4,
+    content: "Testing the program"
+  }, {
+    id: 5,
+    content: "Enjoy & Reflect"
+  }]
+}, {
+  id: 7,
+  title: 'Conflict Resolution Checklist',
+  description: "Quite often our emotions have affect our thinking and behavior. Emotional intelligence help to guide us to address, manage, adjust and adapt to our own goal, parallel with the enviorment needs.",
+  checklist: [{
+    id: 1,
+    content: "How Am I feeling?",
+    details: ""
+  }, {
+    id: 2,
+    content: "What options do I have?",
+    details: "Get creative, get that potential options."
+  }, {
+    id: 3,
+    content: "What is truly important to me?",
+    details: "Who you want to be as a person, that both myself and the people surrounding both value to this choice."
+  }]
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (humanskills);
 
 /***/ }),
 
